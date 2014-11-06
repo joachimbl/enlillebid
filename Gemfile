@@ -7,13 +7,13 @@ gem 'rails', '4.1.7'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
-# Bootstrap
-gem 'bootstrap-sass', '~> 3.3.0'
-
 # ASSETS
 
 # Use Uglifier as compressor for JavaScript assets
 gem "uglifier", ">= 2.3.0"
+
+# Bootstrap
+gem 'bootstrap-sass', '~> 3.3.0'
 
 # Use SCSS for stylesheets
 gem "sass-rails", "~> 4.0.3"
