@@ -1,6 +1,7 @@
 <%= form_for(@idea) do |f| %>
   <% if @idea.errors.any? %>
-    <div id="error_explanation">
+
+    <div id="error_explanation" class="alert alert-success" role="alert">
       <h2><%= pluralize(@idea.errors.count, "error") %> prohibited this idea from being saved:</h2>
 
       <ul>
@@ -9,21 +10,22 @@
       <% end %>
       </ul>
     </div>
+
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: 'form-control' %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :description %><br>
-    <%= f.text_area :description %>
+    <%= f.text_area :description, class: 'form-control' %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :picture %><br>
-    <%= f.file_field :picture %>
+    <%= f.file_field :picture, class: 'form-control' %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+
+  <%= f.submit 'Gem', class: 'btn btn-primary' %>
+
 <% end %>

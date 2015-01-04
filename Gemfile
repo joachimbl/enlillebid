@@ -12,11 +12,11 @@ gem 'pg'
 # Use Uglifier as compressor for JavaScript assets
 gem "uglifier", ">= 2.3.0"
 
-# Bootstrap
-gem 'bootstrap-sass', '~> 3.3.0'
-
 # Use SCSS for stylesheets
 gem "sass-rails", "~> 4.0.3"
+
+# Bootstrap
+gem 'bootstrap-sass', '~> 3.3.0'
 
 # Use jquery as the JavaScript library
 gem "jquery-rails", "~> 3.1.1"

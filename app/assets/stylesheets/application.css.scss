@@ -15,7 +15,10 @@
  */
 
 /* import own variables here */
-@import "font-awesome";
+@import "variables";
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
+
+@import "site/base";
